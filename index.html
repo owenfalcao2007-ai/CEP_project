@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whispering Green Foundation | Building a Cleaner, Greener Tomorrow</title>
+<meta name="description" content="Whispering Green Foundation is an environmental NGO empowering communities through plastic waste management, tree plantation, beach cleanups, school awareness programs and community sustainability initiatives.">
+<meta name="keywords" content="environmental NGO, plastic waste management, tree plantation, beach cleanup, sustainability, volunteer, donate, recycling, climate action">
+<meta property="og:title" content="Whispering Green Foundation | Together We Can Build a Cleaner, Greener Tomorrow">
+<meta property="og:description" content="Join our mission for plastic waste management, tree plantation, beach cleanups and community sustainability.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero-cleanup.jpg">
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<!-- Styles -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ============ Preloader ============ -->
+<div id="preloader" aria-hidden="true">
+  <div class="loader-leaf"><i class="fa-solid fa-leaf"></i></div>
+</div>
+
+<!-- ============ Header / Navbar ============ -->
+<header id="site-header">
+  <div class="container nav-inner">
+    <a href="#hero" class="brand">
+      <img src="images/logo.png" alt="Whispering Green Foundation logo">
+      <span>Whispering Green <small>Foundation</small></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Our Work</a>
+      <a href="#impact">Impact</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#events">Events</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="search-toggle" aria-label="Search site"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <a href="#volunteer" class="btn btn-primary btn-sm" style="display:none" id="nav-cta-desktop">Become a Volunteer</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- Show CTA only on wider screens via CSS override -->
+<style>@media(min-width:1180px){#nav-cta-desktop{display:inline-flex !important;}}</style>
+
+<!-- ============ Search Overlay ============ -->
+<div id="search-overlay">
+  <div class="search-box">
+    <button class="search-close" id="search-close" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+    <input type="text" id="search-input" placeholder="Search the site... (e.g. volunteer, donate, gallery)" autocomplete="off">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<main id="main-content">
+
+<!-- ============ Hero ============ -->
+<section id="hero">
+  <div class="hero-media">
+    <img src="images/hero-cleanup.jpg" alt="Volunteers cleaning up plastic waste on a beach">
+  </div>
+  <div class="leaf-field" id="leaf-field" aria-hidden="true"></div>
+  <div class="container hero-content">
+    <span class="eyebrow"><i class="fa-solid fa-leaf"></i> Environmental NGO · Est. 2014</span>
+    <h1>Together We Can Build a <span class="accent">Cleaner, Greener</span> Tomorrow</h1>
+    <p>Whispering Green Foundation empowers communities through plastic waste management, sustainability initiatives, environmental awareness, and volunteer action.</p>
+    <div class="hero-btns">
+      <a href="#volunteer" class="btn btn-primary">Join Our Mission <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#impact" class="btn btn-outline">Our Impact <i class="fa-solid fa-chart-line"></i></a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><span class="line"></span></div>
+  <div class="hero-stats-strip">
+    <div class="stat"><strong>15,000+</strong><span>Lives Impacted</span></div>
+    <div class="stat"><strong>500+</strong><span>Volunteers</span></div>
+    <div class="stat"><strong>12 Tons</strong><span>Plastic Collected</span></div>
+    <div class="stat"><strong>30+</strong><span>Schools Engaged</span></div>
+  </div>
+</section>
+
+<!-- ============ About ============ -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media reveal-left">
+        <img src="images/about-story.jpg" alt="Whispering Green Foundation volunteers working together outdoors">
+        <div class="about-media-badge">
+          <i class="fa-solid fa-award"></i>
+          <div><strong>10+ Years</strong><span>Of Environmental Action</span></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="eyebrow"><i class="fa-solid fa-circle-info"></i> About Us</span>
+        <h2 style="font-size:clamp(1.9rem,3.6vw,2.6rem); margin-bottom:26px;">Rooted in Community, <span class="text-accent">Growing</span> for the Planet</h2>
+
+        <div class="about-tabs" role="tablist">
+          <button class="about-tab active" data-tab="tab-story">Our Story</button>
+          <button class="about-tab" data-tab="tab-vision">Vision</button>
+          <button class="about-tab" data-tab="tab-mission">Mission</button>
+          <button class="about-tab" data-tab="tab-values">Core Values</button>
+        </div>
+
+        <div class="about-panel active" id="tab-story">
+          <h3>How We Began</h3>
+          <p>Whispering Green Foundation started in 2014 as a small group of neighbors picking up litter on a local beach. What began as a weekend habit grew into a nationwide movement of volunteers, educators, and changemakers united by one belief: that small, consistent action creates lasting environmental change.</p>
+          <p>Today we run plastic waste management drives, tree plantation programs, and school awareness campaigns across 30+ cities — but our heart remains the same grassroots spirit we started with.</p>
+        </div>
+        <div class="about-panel" id="tab-vision">
+          <h3>Our Vision</h3>
+          <p>A world where every community lives in harmony with nature — where clean beaches, thriving forests, and responsible consumption are the norm, not the exception.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Pollution-free coastlines and rivers by 2035</li>
+            <li><i class="fa-solid fa-check"></i> A generation of environmentally literate youth</li>
+            <li><i class="fa-solid fa-check"></i> Circular, zero-waste local economies</li>
+          </ul>
+        </div>
+        <div class="about-panel" id="tab-mission">
+          <h3>Our Mission</h3>
+          <p>To mobilize communities through hands-on environmental action, education, and sustainable innovation — reducing plastic waste, restoring green cover, and building lasting eco-conscious habits.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Organize large-scale cleanup and plantation drives</li>
+            <li><i class="fa-solid fa-check"></i> Educate students and communities on sustainability</li>
+            <li><i class="fa-solid fa-check"></i> Partner with local bodies for lasting waste solutions</li>
+          </ul>
+        </div>
+        <div class="about-panel" id="tab-values">
+          <h3>Core Values</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> <strong>Integrity</strong> — Transparent use of every donated rupee</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Community First</strong> — Locally-led, locally-owned solutions</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Hope in Action</strong> — Optimism backed by measurable results</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Inclusivity</strong> — Environmental action for everyone, everywhere</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="year">2014</div>
+          <h4>Founded on Juhu Beach</h4>
+          <p>A group of 12 volunteers organized the first community beach cleanup.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="year">2017</div>
+          <h4>School Awareness Program Launched</h4>
+          <p>Partnered with 10 schools to teach recycling and waste segregation.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="year">2020</div>
+          <h4>100,000 Trees Milestone</h4>
+          <p>Crossed our first major tree plantation milestone across 8 states.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="year">2023</div>
+          <h4>National Recognition</h4>
+          <p>Received the National Environmental Champion Award for community impact.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="year">2026</div>
+          <h4>500+ Active Volunteers</h4>
+          <p>Expanded operations to 30+ cities with a thriving volunteer network.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Focus Areas ============ -->
+<section id="focus" class="section-pad bg-beige">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-bullseye"></i> What We Do</span>
+      <h2>Our Focus Areas</h2>
+      <p>Five pillars of action driving real, measurable environmental change in communities across the country.</p>
+    </div>
+
+    <div class="focus-grid">
+      <div class="focus-card reveal delay-1">
+        <div class="focus-icon"><i class="fa-solid fa-recycle"></i></div>
+        <h3>Plastic Waste Management</h3>
+        <p>End-to-end collection, segregation, and responsible recycling of plastic waste in urban and coastal communities.</p>
+        <a href="#projects" class="card-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="focus-card reveal delay-2">
+        <div class="focus-icon"><i class="fa-solid fa-seedling"></i></div>
+        <h3>Tree Plantation</h3>
+        <p>Large-scale native sapling plantation drives to restore urban forests and green cover.</p>
+        <a href="#projects" class="card-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="focus-card reveal delay-3">
+        <div class="focus-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
+        <h3>Beach Cleanup</h3>
+        <p>Regular volunteer-driven cleanups restoring coastlines and protecting marine ecosystems.</p>
+        <a href="#projects" class="card-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="focus-card reveal delay-4">
+        <div class="focus-icon"><i class="fa-solid fa-school"></i></div>
+        <h3>School Awareness Programs</h3>
+        <p>Interactive workshops teaching children about recycling, composting, and sustainable living.</p>
+        <a href="#projects" class="card-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="focus-card reveal delay-1">
+        <div class="focus-icon"><i class="fa-solid fa-earth-asia"></i></div>
+        <h3>Community Sustainability</h3>
+        <p>Building local composting, waste-segregation, and circular economy systems that last.</p>
+        <a href="#projects" class="card-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Impact Dashboard ============ -->
+<section id="impact" class="section-pad bg-forest">
+  <div class="impact-bg-graphic" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="section-head center reveal" style="max-width:720px;">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.18);color:#fff;"><i class="fa-solid fa-chart-simple"></i> Impact Dashboard</span>
+      <h2 style="color:#fff;">Numbers That Tell Our Story</h2>
+      <p style="color:rgba(255,255,255,0.88);">A decade of grassroots action, measured and growing every single day.</p>
+    </div>
+
+    <div class="impact-grid">
+      <div class="impact-card reveal delay-1">
+        <i class="fa-solid fa-people-group"></i>
+        <div class="impact-num" data-target="15000" data-suffix="+">0</div>
+        <div class="impact-label">Lives Impacted</div>
+      </div>
+      <div class="impact-card reveal delay-2">
+        <i class="fa-solid fa-hand-holding-heart"></i>
+        <div class="impact-num" data-target="500" data-suffix="+">0</div>
+        <div class="impact-label">Volunteers</div>
+      </div>
+      <div class="impact-card reveal delay-3">
+        <i class="fa-solid fa-weight-hanging"></i>
+        <div class="impact-num" data-target="12" data-suffix=" Tons">0</div>
+        <div class="impact-label">Plastic Collected</div>
+      </div>
+      <div class="impact-card reveal delay-4">
+        <i class="fa-solid fa-school"></i>
+        <div class="impact-num" data-target="30" data-suffix="+">0</div>
+        <div class="impact-label">Schools Engaged</div>
+      </div>
+      <div class="impact-card reveal delay-4">
+        <i class="fa-solid fa-bullhorn"></i>
+        <div class="impact-num" data-target="45" data-suffix="+">0</div>
+        <div class="impact-label">Environmental Campaigns</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SDG Section ============ -->
+<section id="sdg" class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-globe"></i> Global Alignment</span>
+      <h2>Contributing to the UN Sustainable Development Goals</h2>
+      <p>Every initiative we run is mapped to global sustainability targets — connecting local action to worldwide impact.</p>
+    </div>
+
+    <div class="sdg-grid">
+      <div class="sdg-card sdg-11 reveal delay-1">
+        <div class="sdg-head">
+          <div class="sdg-num">SDG 11</div>
+          <h3>Sustainable Cities &amp; Communities</h3>
+        </div>
+        <div class="sdg-body">
+          <p>We help cities manage waste responsibly and expand accessible green public spaces for all residents.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Urban tree plantation &amp; green corridors</li>
+            <li><i class="fa-solid fa-circle-check"></i> Community-led waste segregation systems</li>
+            <li><i class="fa-solid fa-circle-check"></i> Clean public spaces through regular cleanups</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sdg-card sdg-12 reveal delay-2">
+        <div class="sdg-head">
+          <div class="sdg-num">SDG 12</div>
+          <h3>Responsible Consumption &amp; Production</h3>
+        </div>
+        <div class="sdg-body">
+          <p>Our plastic management and recycling programs reduce waste at the source and close the loop on materials.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Plastic collection &amp; recycling drives</li>
+            <li><i class="fa-solid fa-circle-check"></i> School programs on sustainable consumption</li>
+            <li><i class="fa-solid fa-circle-check"></i> Partnerships with responsible recyclers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sdg-card sdg-13 reveal delay-3">
+        <div class="sdg-head">
+          <div class="sdg-num">SDG 13</div>
+          <h3>Climate Action</h3>
+        </div>
+        <div class="sdg-body">
+          <p>Reforestation and awareness campaigns build climate resilience while cutting long-term carbon impact.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Native species reforestation programs</li>
+            <li><i class="fa-solid fa-circle-check"></i> Public climate literacy campaigns</li>
+            <li><i class="fa-solid fa-circle-check"></i> Advocacy for low-carbon community practices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Projects ============ -->
+<section id="projects" class="section-pad bg-beige">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-diagram-project"></i> Our Work</span>
+      <h2>Featured Projects</h2>
+      <p>Hands-on programs run in partnership with local communities, schools, and municipal bodies.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal delay-1">
+        <div class="project-media">
+          <img src="images/plastic-drive-1.jpg" alt="Volunteers sorting collected plastic waste during a collection drive">
+          <span class="project-tag">Ongoing</span>
+        </div>
+        <div class="project-body">
+          <h3>Plastic Collection Drives</h3>
+          <p>Weekly neighborhood drives collecting and sorting household plastic waste for recycling partners.</p>
+          <a href="#volunteer" class="project-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card reveal delay-2">
+        <div class="project-media">
+          <img src="images/river-cleanup-1.jpg" alt="Volunteers cleaning up a river bank filled with waste">
+          <span class="project-tag">Quarterly</span>
+        </div>
+        <div class="project-body">
+          <h3>River Cleanup</h3>
+          <p>Coordinated cleanups of urban riverbanks to remove plastic and restore aquatic ecosystems.</p>
+          <a href="#volunteer" class="project-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card reveal delay-3">
+        <div class="project-media">
+          <img src="images/tree-planting-1.jpg" alt="Volunteers planting young trees together">
+          <span class="project-tag">Seasonal</span>
+        </div>
+        <div class="project-body">
+          <h3>Tree Plantation</h3>
+          <p>Native sapling plantation drives across degraded urban and peri-urban land parcels.</p>
+          <a href="#volunteer" class="project-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card reveal delay-1">
+        <div class="project-media">
+          <img src="images/school-awareness-1.jpg" alt="Students participating in an outdoor environmental awareness activity">
+          <span class="project-tag">Year-round</span>
+        </div>
+        <div class="project-body">
+          <h3>School Awareness</h3>
+          <p>Interactive classroom sessions and outdoor activities teaching kids sustainable habits.</p>
+          <a href="#volunteer" class="project-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card reveal delay-2">
+        <div class="project-media">
+          <img src="images/community-event-1.jpg" alt="Community members gathered for a sustainability event">
+          <span class="project-tag">Monthly</span>
+        </div>
+        <div class="project-body">
+          <h3>Community Recycling</h3>
+          <p>Neighborhood recycling hubs that make responsible disposal easy and rewarding.</p>
+          <a href="#volunteer" class="project-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card reveal delay-3">
+        <div class="project-media">
+          <img src="images/waste-segregation-1.jpg" alt="Color-coded waste segregation bins for recycling">
+          <span class="project-tag">Ongoing</span>
+        </div>
+        <div class="project-body">
+          <h3>Waste Segregation</h3>
+          <p>Installing and maintaining color-coded segregation systems in public spaces.</p>
+          <a href="#volunteer" class="project-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Before/After Compare ============ -->
+<section id="compare" class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-arrows-left-right"></i> Real Results</span>
+      <h2>Before &amp; After: See the Difference</h2>
+      <p>Drag the slider to witness the transformation our volunteer cleanup drives make possible.</p>
+    </div>
+    <div class="compare-wrap reveal-scale">
+      <div class="ba-slider" id="ba-slider">
+        <img class="ba-after" src="images/beach-after.jpg" alt="Clean beach after a Whispering Green Foundation cleanup drive">
+        <div class="ba-before-wrap">
+          <img src="images/beach-before.jpg" alt="Beach covered in plastic waste before cleanup">
+        </div>
+        <div class="ba-handle"></div>
+        <span class="ba-label before">Before</span>
+        <span class="ba-label after">After</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Gallery ============ -->
+<section id="gallery" class="section-pad bg-beige">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-images"></i> Moments Captured</span>
+      <h2>Our Gallery</h2>
+      <p>A visual journey through our volunteers, cleanups, plantations, and community campaigns.</p>
+    </div>
+
+    <div class="gallery-filters reveal">
+      <button class="gallery-filter active" data-filter="all">All</button>
+      <button class="gallery-filter" data-filter="cleanup">Cleanups</button>
+      <button class="gallery-filter" data-filter="plantation">Plantation</button>
+      <button class="gallery-filter" data-filter="school">School Programs</button>
+      <button class="gallery-filter" data-filter="community">Community</button>
+    </div>
+
+    <div class="masonry">
+      <div class="masonry-item" data-category="cleanup"><img src="images/beach-cleanup-1.jpg" alt="Volunteer picking up plastic waste on the beach"><div class="masonry-overlay"><span>Beach Cleanup Drive</span></div></div>
+      <div class="masonry-item" data-category="plantation"><img src="images/tree-planting-1.jpg" alt="Volunteers planting trees together"><div class="masonry-overlay"><span>Tree Plantation Day</span></div></div>
+      <div class="masonry-item" data-category="school"><img src="images/school-awareness-1.jpg" alt="Students learning about environmental sustainability outdoors"><div class="masonry-overlay"><span>School Awareness Program</span></div></div>
+      <div class="masonry-item" data-category="cleanup"><img src="images/river-cleanup-1.jpg" alt="Volunteers cleaning a riverbank"><div class="masonry-overlay"><span>River Revival Drive</span></div></div>
+      <div class="masonry-item" data-category="community"><img src="images/community-event-1.jpg" alt="Community members at a sustainability event"><div class="masonry-overlay"><span>Community Sustainability Day</span></div></div>
+      <div class="masonry-item" data-category="cleanup"><img src="images/beach-cleanup-2.jpg" alt="Team of volunteers collecting plastic waste from the shore"><div class="masonry-overlay"><span>Coastal Cleanup Marathon</span></div></div>
+      <div class="masonry-item" data-category="school"><img src="images/school-recycling-1.jpg" alt="Children learning about recycling"><div class="masonry-overlay"><span>Recycling Workshop</span></div></div>
+      <div class="masonry-item" data-category="plantation"><img src="images/tree-planting-2.jpg" alt="Volunteer planting a young sapling"><div class="masonry-overlay"><span>Urban Forest Restoration</span></div></div>
+      <div class="masonry-item" data-category="community"><img src="images/gallery-extra-2.jpg" alt="Volunteers collecting trash together during cleanup"><div class="masonry-overlay"><span>Neighborhood Cleanup</span></div></div>
+      <div class="masonry-item" data-category="cleanup"><img src="images/beach-cleanup-3.jpg" alt="Volunteer holding a bag of collected plastic waste"><div class="masonry-overlay"><span>Plastic-Free Coast Initiative</span></div></div>
+      <div class="masonry-item" data-category="community"><img src="images/community-event-2.jpg" alt="Group of volunteers posing together outdoors"><div class="masonry-overlay"><span>Volunteer Appreciation Day</span></div></div>
+      <div class="masonry-item" data-category="cleanup"><img src="images/river-cleanup-2.jpg" alt="Kayak volunteers collecting river waste"><div class="masonry-overlay"><span>Waterway Cleanup Crew</span></div></div>
+      <div class="masonry-item" data-category="plantation"><img src="images/forest-aerial-2.jpg" alt="Aerial view of green forest landscape"><div class="masonry-overlay"><span>Restored Green Cover</span></div></div>
+      <div class="masonry-item" data-category="school"><img src="images/waste-segregation-2.jpg" alt="Colorful waste segregation bins used in school programs"><div class="masonry-overlay"><span>Waste Segregation Training</span></div></div>
+      <div class="masonry-item" data-category="community"><img src="images/gallery-extra-3.jpg" alt="Volunteer group photo outdoors"><div class="masonry-overlay"><span>Green Volunteers Meetup</span></div></div>
+      <div class="masonry-item" data-category="cleanup"><img src="images/gallery-extra-4.jpg" alt="Volunteers cleaning up beach waste"><div class="masonry-overlay"><span>Beach Restoration Project</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <button class="lb-close" id="lb-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lb-prev" id="lb-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+  <img id="lb-img" src="" alt="Gallery image preview">
+  <button class="lb-next" id="lb-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="lb-caption" id="lb-caption"></div>
+</div>
+
+<!-- ============ Events ============ -->
+<section id="events" class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-calendar-days"></i> Get Involved</span>
+      <h2>Upcoming Events</h2>
+      <p>Join us in person — every event is a step toward a cleaner, greener community.</p>
+    </div>
+
+    <div class="countdown-banner reveal">
+      <div class="countdown-info">
+        <h3><i class="fa-solid fa-hourglass-half"></i> Next Event: <span id="countdown-event-title">Loading...</span></h3>
+        <p>Don't miss out — registration spots are limited!</p>
+      </div>
+      <div class="countdown-timer" id="countdown-timer">
+        <div class="cd-block"><strong>--</strong><span>Days</span></div>
+        <div class="cd-block"><strong>--</strong><span>Hours</span></div>
+        <div class="cd-block"><strong>--</strong><span>Mins</span></div>
+        <div class="cd-block"><strong>--</strong><span>Secs</span></div>
+      </div>
+    </div>
+
+    <div class="events-grid" id="events-grid">
+      <!-- Events injected via JS from Table API -->
+    </div>
+  </div>
+</section>
+
+<!-- Registration Modal -->
+<div class="modal-overlay" id="registration-modal">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <h3>Register for Event</h3>
+    <p class="sub" id="reg-event-title">Event Title</p>
+    <form id="registration-form">
+      <input type="hidden" id="reg-event-id">
+      <div class="form-group">
+        <label for="reg-name">Full Name</label>
+        <input type="text" id="reg-name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="reg-email">Email</label>
+        <input type="email" id="reg-email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="reg-phone">Phone</label>
+        <input type="tel" id="reg-phone" placeholder="+91 00000 00000" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Confirm Registration</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ Volunteer ============ -->
+<section id="volunteer" class="section-pad">
+  <div class="container">
+    <div class="volunteer-grid">
+      <div class="volunteer-intro reveal-left">
+        <span class="eyebrow"><i class="fa-solid fa-hand-fist"></i> Get Involved</span>
+        <h2>Become a Volunteer, Become the Change</h2>
+        <p>Whether you have an afternoon or every weekend, there's a place for you in our mission. Join a community of 500+ changemakers today.</p>
+        <ul class="volunteer-points">
+          <li><i class="fa-solid fa-circle-check"></i> Flexible scheduling that fits your life</li>
+          <li><i class="fa-solid fa-circle-check"></i> Training, gear, and safety fully provided</li>
+          <li><i class="fa-solid fa-circle-check"></i> Certificates &amp; recognition for consistent volunteers</li>
+          <li><i class="fa-solid fa-circle-check"></i> Meet a community that shares your values</li>
+        </ul>
+      </div>
+
+      <div class="glass-card reveal-right">
+        <form id="volunteer-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="vol-name">Name</label>
+              <input type="text" id="vol-name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="vol-email">Email</label>
+              <input type="email" id="vol-email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="vol-phone">Phone</label>
+              <input type="tel" id="vol-phone" placeholder="+91 00000 00000" required>
+            </div>
+            <div class="form-group">
+              <label for="vol-city">City</label>
+              <input type="text" id="vol-city" placeholder="Your city" required>
+            </div>
+            <div class="form-group">
+              <label for="vol-age">Age</label>
+              <input type="number" id="vol-age" placeholder="e.g. 24" min="14" max="99" required>
+            </div>
+            <div class="form-group">
+              <label for="vol-availability">Availability</label>
+              <select id="vol-availability" required>
+                <option value="">Select availability</option>
+                <option>Weekends</option>
+                <option>Weekdays</option>
+                <option>Evenings</option>
+                <option>Full-time</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="vol-interest">Area of Interest</label>
+              <select id="vol-interest" required>
+                <option value="">Select an area</option>
+                <option>Plastic Waste Management</option>
+                <option>Tree Plantation</option>
+                <option>Beach Cleanup</option>
+                <option>School Awareness Programs</option>
+                <option>Community Sustainability</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="vol-message">Message (optional)</label>
+              <textarea id="vol-message" rows="3" placeholder="Tell us why you'd like to volunteer..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Become a Volunteer</button>
+          <p class="form-msg" id="volunteer-form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Donation ============ -->
+<section id="donate" class="section-pad bg-beige">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-hand-holding-heart"></i> Make a Difference</span>
+      <h2>Support a Greener Future</h2>
+      <p>Every contribution funds real, on-ground action — from sapling costs to cleanup gear to school workshops.</p>
+    </div>
+
+    <div class="donate-grid">
+      <div class="reveal-left">
+        <div class="donate-card">
+          <div class="donate-freq">
+            <button type="button" class="active" data-freq="one-time">One-Time</button>
+            <button type="button" data-freq="monthly">Monthly</button>
+          </div>
+          <form id="donate-form">
+            <div class="donate-amounts">
+              <button type="button" class="amount-btn" data-amount="100">₹100<small>Plants 2 saplings</small></button>
+              <button type="button" class="amount-btn active" data-amount="500">₹500<small>Funds a cleanup kit</small></button>
+              <button type="button" class="amount-btn" data-amount="1000">₹1000<small>Sponsors a workshop</small></button>
+              <button type="button" class="amount-btn" data-amount="2500">₹2500<small>Adopts a green zone</small></button>
+            </div>
+            <div class="donate-custom">
+              <span>₹</span>
+              <input type="number" id="custom-amount" placeholder="Enter custom amount">
+            </div>
+            <div class="form-group">
+              <label for="donor-name" style="color:var(--text-dark)">Name</label>
+              <input type="text" id="donor-name" placeholder="Your full name" required style="border:1.5px solid var(--border-soft); background:var(--bg-white); color:var(--text-dark);">
+            </div>
+            <div class="form-group">
+              <label for="donor-email" style="color:var(--text-dark)">Email</label>
+              <input type="email" id="donor-email" placeholder="you@example.com" required style="border:1.5px solid var(--border-soft); background:var(--bg-white); color:var(--text-dark);">
+            </div>
+            <div class="form-group">
+              <label for="donor-message" style="color:var(--text-dark)">Message (optional)</label>
+              <textarea id="donor-message" rows="2" placeholder="Dedicate this donation..." style="width:100%;padding:14px 18px;border-radius:10px;border:1.5px solid var(--border-soft);background:var(--bg-white);color:var(--text-dark);"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-lock"></i> Secure Donate</button>
+            <div class="donate-secure"><i class="fa-solid fa-shield-halved"></i> 256-bit encrypted &middot; 100% transparent fund usage</div>
+          </form>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <h3 style="font-size:1.4rem;margin-bottom:10px;">Where Your Money Goes</h3>
+        <p style="color:var(--text-muted);margin-bottom:10px;">We maintain full transparency on fund allocation across every program we run.</p>
+        <ul class="donate-impact-list">
+          <li>
+            <i class="fa-solid fa-seedling"></i>
+            <div><h4>Tree Plantation &amp; Maintenance</h4><p>Sapling sourcing, planting labor, and 2-year growth monitoring.</p></div>
+          </li>
+          <li>
+            <i class="fa-solid fa-recycle"></i>
+            <div><h4>Cleanup Equipment</h4><p>Gloves, bags, sorting bins, and safe transport of collected waste.</p></div>
+          </li>
+          <li>
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <div><h4>School Workshops</h4><p>Educational material, facilitator training, and event logistics.</p></div>
+          </li>
+          <li>
+            <i class="fa-solid fa-people-group"></i>
+            <div><h4>Volunteer Support</h4><p>Training sessions, safety gear, and recognition programs.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Testimonials ============ -->
+<section id="testimonials" class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-quote-left"></i> Voices From Our Community</span>
+      <h2>What Our Volunteers Say</h2>
+      <p>Real stories from the people who make our mission possible, every single day.</p>
+    </div>
+
+    <div class="testi-track-wrap reveal">
+      <div class="testi-track" id="testi-track">
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote">"Volunteering with Whispering Green changed how I see my own neighborhood. The beach cleanups are exhausting but incredibly rewarding — seeing the shoreline transform in a single morning is unforgettable."</p>
+          <div class="testi-person">
+            <img src="images/volunteer-portrait-1.jpg" alt="Portrait of volunteer Ananya Rao">
+            <div><strong>Ananya Rao</strong><span>Volunteer since 2021</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote">"The school awareness program brought by this foundation completely shifted how our students think about waste. They now run their own mini recycling drive every month!"</p>
+          <div class="testi-person">
+            <img src="images/volunteer-portrait-2.jpg" alt="Portrait of teacher Manoj Deshmukh">
+            <div><strong>Manoj Deshmukh</strong><span>School Partner, Mumbai</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+          <p class="quote">"I've donated monthly for two years now, and the transparency reports are exactly why I keep giving. You can see precisely how many trees your money planted."</p>
+          <div class="testi-person">
+            <img src="images/volunteer-portrait-3.jpg" alt="Portrait of donor Priya Iyer">
+            <div><strong>Priya Iyer</strong><span>Monthly Donor</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote">"Joining the tree plantation drive with my kids was one of our best weekends. It's amazing to watch a barren patch of land turn green over the following months."</p>
+          <div class="testi-person">
+            <img src="images/community-event-2.jpg" alt="Portrait of volunteer family">
+            <div><strong>Rahul &amp; Family</strong><span>Community Volunteers</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-nav">
+      <button id="testi-prev" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+      <button id="testi-next" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Blog ============ -->
+<section id="blog" class="section-pad bg-beige">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-newspaper"></i> Resources</span>
+      <h2>From Our Blog</h2>
+      <p>Insights, guides, and stories to help you live a more sustainable life.</p>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-card reveal delay-1">
+        <div class="blog-media"><img src="images/plastic-drive-2.jpg" alt="Article on reducing plastic waste"></div>
+        <div class="blog-body">
+          <span class="blog-cat">Sustainability</span>
+          <h3>5 Practical Ways to Reduce Plastic Waste at Home</h3>
+          <div class="blog-meta"><span>Jul 12, 2026</span><span>4 min read</span></div>
+        </div>
+      </article>
+      <article class="blog-card reveal delay-2">
+        <div class="blog-media"><img src="images/waste-segregation-2.jpg" alt="Article on why recycling matters"></div>
+        <div class="blog-body">
+          <span class="blog-cat">Recycling</span>
+          <h3>Why Recycling Matters More Than You Think</h3>
+          <div class="blog-meta"><span>Jun 28, 2026</span><span>5 min read</span></div>
+        </div>
+      </article>
+      <article class="blog-card reveal delay-3">
+        <div class="blog-media"><img src="images/beach-after.jpg" alt="Article on beach cleanup success stories"></div>
+        <div class="blog-body">
+          <span class="blog-cat">Impact Stories</span>
+          <h3>Beach Cleanup Success Stories From 2026</h3>
+          <div class="blog-meta"><span>Jun 15, 2026</span><span>6 min read</span></div>
+        </div>
+      </article>
+      <article class="blog-card reveal delay-4">
+        <div class="blog-media"><img src="images/forest-aerial-1.jpg" alt="Article on sustainable living tips"></div>
+        <div class="blog-body">
+          <span class="blog-cat">Lifestyle</span>
+          <h3>10 Sustainable Living Tips for Beginners</h3>
+          <div class="blog-meta"><span>May 30, 2026</span><span>3 min read</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Social Feed ============ -->
+<section id="social" class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-hashtag"></i> Follow Along</span>
+      <h2>#WhisperingGreen On Social Media</h2>
+      <p>Follow our latest drives, milestones, and behind-the-scenes moments.</p>
+    </div>
+    <div class="social-feed-grid reveal">
+      <div class="social-feed-item"><img src="images/beach-cleanup-1.jpg" alt="Social post: beach cleanup"><div class="sf-overlay"><i class="fa-brands fa-instagram"></i><span>2.4k likes</span></div></div>
+      <div class="social-feed-item"><img src="images/tree-planting-2.jpg" alt="Social post: tree plantation"><div class="sf-overlay"><i class="fa-brands fa-instagram"></i><span>1.8k likes</span></div></div>
+      <div class="social-feed-item"><img src="images/school-awareness-2.jpg" alt="Social post: school program"><div class="sf-overlay"><i class="fa-brands fa-facebook"></i><span>980 likes</span></div></div>
+      <div class="social-feed-item"><img src="images/community-event-1.jpg" alt="Social post: community event"><div class="sf-overlay"><i class="fa-brands fa-instagram"></i><span>3.1k likes</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Newsletter Strip ============ -->
+<section class="section-pad" style="padding-top:0;">
+  <div class="newsletter-strip reveal-scale">
+    <div>
+      <h3><i class="fa-solid fa-envelope-open-text"></i> Stay in the Loop</h3>
+      <p>Get monthly updates on our drives, impact reports, and ways to get involved.</p>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ Contact ============ -->
+<section id="contact" class="section-pad bg-beige">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-envelope"></i> Reach Out</span>
+      <h2>Get In Touch</h2>
+      <p>Questions, partnership ideas, or press inquiries — we'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="contact-info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><h4>Our Address</h4><p>14 Greenwood Lane, Bandra West, Mumbai, Maharashtra 400050, India</p></div>
+        </div>
+        <div class="contact-info-card">
+          <i class="fa-solid fa-phone"></i>
+          <div><h4>Phone</h4><p>+91 98765 43210</p></div>
+        </div>
+        <div class="contact-info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div><h4>Email</h4><p>hello@whisperinggreen.org</p></div>
+        </div>
+        <div class="contact-info-card">
+          <i class="fa-solid fa-share-nodes"></i>
+          <div>
+            <h4>Follow Us</h4>
+            <div class="contact-socials">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://maps.google.com/maps?q=Bandra%20West%2C%20Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" title="Whispering Green Foundation location map" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name" style="color:var(--text-dark)">Name</label>
+                <input type="text" id="contact-name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email" style="color:var(--text-dark)">Email</label>
+                <input type="email" id="contact-email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group full">
+                <label for="contact-subject" style="color:var(--text-dark)">Subject</label>
+                <input type="text" id="contact-subject" placeholder="How can we help?" required>
+              </div>
+              <div class="form-group full">
+                <label for="contact-message" style="color:var(--text-dark)">Message</label>
+                <textarea id="contact-message" rows="6" placeholder="Write your message here..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-sky btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Whispering Green Foundation logo">
+          <strong>Whispering Green<br>Foundation</strong>
+        </div>
+        <p style="font-size:0.92rem; max-width:320px; color:rgba(255,255,255,0.6);">Empowering communities through plastic waste management, tree plantation, and environmental awareness since 2014.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Our Work</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.9rem;color:rgba(255,255,255,0.6);margin-bottom:16px;">Subscribe for updates on our latest drives and impact reports.</p>
+        <form class="newsletter-form" style="flex-wrap:nowrap;">
+          <input type="email" placeholder="Your email" required style="width:auto;flex:1;">
+          <button type="submit" style="padding:15px 20px;">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="current-year">2026</span> Whispering Green Foundation. All rights reserved.</span>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ Floating UI ============ -->
+<button id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* ============================================================
+   Responsive breakpoints — Whispering Green Foundation
+   ============================================================ */
+
+@media (max-width: 1180px) {
+  .impact-grid { grid-template-columns: repeat(3, 1fr); }
+  .impact-card:nth-child(4), .impact-card:nth-child(5) { grid-column: span 1; }
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+  .social-feed-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 1024px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .about-grid, .volunteer-grid, .donate-grid, .contact-grid { grid-template-columns: 1fr; }
+  .about-media img { height: 400px; }
+  .focus-grid, .sdg-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .events-grid { grid-template-columns: 1fr; }
+  .masonry { column-count: 3; }
+  .testi-card { min-width: calc(50% - 14px); }
+  .impact-grid { grid-template-columns: repeat(3, 1fr); }
+
+  /* Mobile nav drawer */
+  .nav-links.mobile-open {
+    display: flex;
+    position: fixed;
+    top: 72px; left: 0; right: 0; bottom: 0;
+    background: rgba(10, 25, 12, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 30px;
+    gap: 6px;
+    overflow-y: auto;
+  }
+  .nav-links.mobile-open a { color: #fff; width: 100%; padding: 16px 10px; font-size: 1.1rem; border-bottom: 1px solid rgba(255,255,255,0.08); border-radius: 0; }
+}
+
+@media (max-width: 860px) {
+  .section-pad { padding: 80px 0; }
+  .form-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .donate-amounts { grid-template-columns: repeat(2, 1fr); }
+  .countdown-banner { flex-direction: column; align-items: flex-start; }
+  .newsletter-strip { flex-direction: column; align-items: flex-start; text-align: left; }
+  .newsletter-form input { width: 100%; }
+  .newsletter-form { width: 100%; }
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .focus-grid, .sdg-grid, .projects-grid, .blog-grid { grid-template-columns: 1fr; }
+  .masonry { column-count: 2; }
+  .social-feed-grid { grid-template-columns: repeat(2, 1fr); }
+  .testi-card { min-width: 100%; }
+  .timeline::before { left: 18px; }
+  .timeline-item { width: 100%; padding-left: 50px; padding-right: 10px; text-align: left !important; left: 0 !important; }
+  .timeline-item .timeline-dot { left: 9px !important; right: auto !important; }
+  .hero-stats-strip { gap: 26px; }
+  .hero-btns { flex-direction: column; align-items: stretch; }
+  .hero-btns .btn { width: 100%; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .about-tabs { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 6px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 18px; }
+  .hero-content h1 { font-size: 2.1rem; }
+  .section-head h2 { font-size: 1.7rem; }
+  .impact-grid { grid-template-columns: 1fr 1fr; }
+  .impact-num { font-size: 2rem; }
+  .masonry { column-count: 1; }
+  .donate-amounts { grid-template-columns: 1fr 1fr; }
+  .glass-card, .contact-form-card, .donate-card { padding: 26px; }
+  .about-media-badge { left: 10px; bottom: -20px; padding: 16px 18px; }
+  .event-card { flex-direction: column; }
+  .event-date-block { flex-direction: row; gap: 8px; padding: 14px; }
+}
