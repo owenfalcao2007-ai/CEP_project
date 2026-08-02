@@ -4,6 +4,37 @@
 (function () {
   'use strict';
 
+  function createFallbackImage(text) {
+    var svg = [
+      '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">',
+      '<rect width="1200" height="800" fill="#eaf5ea" />',
+      '<rect x="90" y="90" width="1020" height="620" rx="28" fill="#f7fbf6" stroke="#2e7d32" stroke-width="4" />',
+      '<path d="M330 530c50-124 128-210 220-210 78 0 152 62 210 196" fill="none" stroke="#81c784" stroke-width="18" stroke-linecap="round" />',
+      '<circle cx="290" cy="270" r="84" fill="#2e7d32" />',
+      '<text x="600" y="430" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="36" fill="#1b5e20">' + text + '</text>',
+      '<text x="600" y="490" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5a5f58">Community impact in action</text>',
+      '</svg>'
+    ].join('');
+    return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+  }
+
+  function attachImageFallbacks() {
+    document.querySelectorAll('img').forEach(function (img) {
+      img.addEventListener('error', function () {
+        if (!img.dataset.fallback) {
+          img.dataset.fallback = '1';
+          var altText = (img.getAttribute('alt') || 'Community initiative').replace(/[^a-z0-9]+/gi, ' ').trim() || 'Community initiative';
+          img.src = createFallbackImage(altText);
+        }
+      });
+      if (img.complete && img.naturalWidth === 0) {
+        img.dispatchEvent(new Event('error'));
+      }
+    });
+  }
+
+  attachImageFallbacks();
+
   /* ---------- Preloader ---------- */
   window.addEventListener('load', function () {
     var pre = document.getElementById('preloader');
